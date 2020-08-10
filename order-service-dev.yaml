@@ -13,6 +13,9 @@ spring:
   zipkin:
     sender:
       type: rabbit
+  sleuth:
+    sampler:
+      probability: 0.9
 server:
   port: 8201
 eureka:

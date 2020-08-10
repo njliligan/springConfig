@@ -13,6 +13,10 @@ spring:
   zipkin:
     sender:
       type: rabbit
+  sleuth:
+    sampler:
+      probability: 0.9
+
 server:
   port: 3001
 ribbon:
